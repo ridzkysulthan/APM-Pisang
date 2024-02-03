@@ -1,96 +1,132 @@
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
+*{
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: "Merriweather", serif;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 90%;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.f-wrap {
-  flex-wrap: wrap;
-}
-
-.img-responsive {
+/* NAVBAR */
+nav{
+  position: sticky;
+  display: block;
+  left: 0;
+  top: 0;
   width: 100%;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
-.jc-spacebetween {
+.nav-content{
+  display: flex;
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
   justify-content: space-between;
 }
 
-.ai-center {
+.logo img{
+  max-width: 50px;
+
+}
+
+.nav-content ul{
+  display: flex;
   align-items: center;
 }
 
-.spacer5 {
-  padding: 5% 0;
+.nav-content ul li{
+  list-style: none;
+  margin: 0 10px;
+}
+.nav-content ul li a{
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  padding: 10px 4px;
+  text-decoration: none;
 }
 
-.spacersection {
-  margin: 1.5%;
+.nav-content ul li a:hover{
+  border-bottom: 1px solid black;
 }
 
-/* header */
-.header {
-  position: fixed;
-  width: 100%;
+/* SELSAI NAVBAR */
+
+/* ABOUT */
+.about{
+  padding: 80px 0px;
+  margin: 0 auto;
+  max-width: 1200px;
   background-color: white;
 }
-.header .logo a {
-  text-decoration: none;
-  color: black;
-}
-.header .menu a {
-  text-decoration: none;
-  padding: 10px;
-  color: black;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-}
-.header .menu a:hover {
-  background: rgb(235, 193, 8);
-  color: white;
-}
 
-.hero {
-  background: url(https://images.unsplash.com/photo-1526364163643-89e30b8fcb70?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-attachment: fixed;
-  height: 600px;
-  background-size: cover;
-  background-position: bottom;
-}
+/* SELSAI ABOUT */
 
-.about-image {
-  width: 40%;
-}
 
-.product-title {
-  margin: 1.5%;
+/* CARD */
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
 }
-.product-item {
-  width: 22%;
-  margin: 1.5%;
+.card-container h1{
+  width: 85%;
+  margin: auto;
+  text-align: center;
 }
-.product-item .si-image {
-  height: 30px;
+.card{
+  width: 325px;
+  background-color: white;
+  border-radius: 8px;
   overflow: hidden;
+  box-shadow:0px 2px 4px rgba(0,0,0,0.2);
+  margin: 20px;
 }
 
-.contact {
-  background-color: rgb(235, 193, 8);
-}/*# sourceMappingURL=style.css.map */
+.card img{
+  width: 100%;
+  height: auto;
+}
+
+.card content h3{
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.card-content p{
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+/* CARD SELSAI */
+
+/* CONTACT US */
+.contact-container{
+  width: 80% ;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.contact-container h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+form input,
+form textarea{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* CONTACT US SELSAI */
